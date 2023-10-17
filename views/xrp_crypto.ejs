@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order payment by XRP</title>
+  <link rel="stylesheet" href="/usdt_crypto.css">
+  <link rel="icon" href="/images/main-logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="wrapp">
+    <div class="content-block">
+
+      <div class="block-header">
+        <div class="header-padd">
+          <div class="left">
+            <div class="left-top">
+              <a href="/">👈Back to Gamecodess.com</a>
+            </div>
+          </div>
+          <div class="right">
+            <button class="details">Payment details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-body">
+        <div class="inial-content">
+          <div class="transaction-form">
+            <div class="top">
+              <div class="for_img">
+                <img src="https://cdn-icons-png.flaticon.com/128/4279/4279259.png" alt="">
+              </div>
+              <span>Ripple</span>
+            </div>
+            <div class="bottom">
+              <div class="bottom-info">
+                <div class="wallt_trc">
+                  <div>
+                    <h3 class="title">
+                      Wallet address XRP
+                    </h3>
+                    <span class="adress crypto-adress">
+                      rPt2M88VxDYFrBiy5e8ratGq7Mwe3murwC
+                    </span>
+                    <h3 class="title">
+                      Tag
+                    </h3>
+                    <span class="adress crypto-adress">
+                      106641
+                    </span>
+                  </div>
+                  <button class="to-copy1">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5859/5859288.png" alt="">
+                  </button>
+                </div>
+                <div class="sum-topay">
+                  <div>
+                    <h3 class="title">
+                      Amount
+                    </h3>
+                    <span class="adress sum-adress">
+                      <% switch (origin) {
+                        case 'Луна 1 месяц':
+                          %>7.23 XRP<%
+                          break;
+                        case 'Луна 2 месяца':
+                          %>14.48 XRP<%
+                          break;
+                        case 'Луна 3 месяца':
+                          %>21.73 XRP<%
+                          break;
+                        case 'Луна 6 месяцев':
+                          %>43.48 XRP<%
+                          break;
+                        case 'Кристаллы 300 штук':
+                          %>8.26 XRP<%
+                          break;
+                        case 'Кристаллы 980 штук':
+                          %>24.84 XRP<%
+                          break;
+                        case 'Кристаллы 1980 штук':
+                          %>51.76 XRP<%
+                          break;
+                        case 'Кристаллы 3280 штук':
+                          %>82.84 XRP<%
+                          break;
+                        case 'Кристаллы 6480 штук':
+                          %>165.69 XRP<%
+                          break;
+                        case 'Кристаллы 30960 штук':
+                          %>495 XRP<%
+                          break;
+                        default:
+                          %>Unknown<%
+                      } %>
+                    </span>
+                  </div>
+                  <button class="to-copy2">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5859/5859288.png" alt="">
+                  </button>
+                </div>
+                <div class="descr">
+                  <span>The translation must be completed within</span>
+                  <span id="timer">
+                    20:00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <button class="conf-pay">I have paid</button>
+          </div>
+        </div>
+        <!-- Модальное окно и затемненный фон -->
+        <div class="overlay"></div>
+        <div class="modal">
+          <div class="inial_modal">
+              <h2>Confirm payment</h2>
+              <div class="modal_checkbox">
+                <p>I confirm that I have paid the specified amount to the provided address. (If the payment was not made, the product will not be credited to the account).</p>
+              </div>
+              <div class="modal_butts">
+                <button class="conf-pay cancel_p">Cancel</button>
+                <button class="conf-pay go_p">Complete payment</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="modal-details">
+          <div class="inial_modal">
+            <div class="details-close">
+              <h2>Payment details</h2>
+              <img class="close_w" src="https://cdn-icons-png.flaticon.com/128/1828/1828778.png" alt="">
+            </div>
+            <div class="details-shop">
+              <h3>Store</h3>
+              <span>gamecodess.com</span>
+            </div>
+            <div class="details-id">
+              <h3>Order ID</h3>
+              <span class="ur-id"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <script src="/usdt_crypto.js"></script>
+</body>
+</html>

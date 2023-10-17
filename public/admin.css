@@ -1,0 +1,35 @@
+/* Основные стили таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Стили заголовков столбцов */
+th {
+  background-color: #f2f2f2;
+}
+
+/* Стили строк таблицы (чередование цветов) */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+form button{
+  background-color: aquamarine;
+  border: gray 1px solid;
+  padding: 10px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 15px;
+  cursor: pointer;
+}

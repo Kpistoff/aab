@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админка</title>
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <h1>Админка</h1>
+
+  <div class="button_pages">
+    <button id="firstPageBtn">Заказы</button>
+    <button id="secondPageBtn">Отзывы</button>
+    <button id="thirdPageBtn">Редактор кода</button>
+  </div>
+
+  <h1>Список данных</h1>
+  <form action="/logout" method="GET">
+    <button type="submit">Выход</button>
+  </form>
+  <div class="page" id="firstPage">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Пользователь UID</th>
+          <th>Метод оплаты</th>
+          <th>Дата и время</th>
+          <th>Товар</th>
+          <th>IP-адрес пользователя</th> <!-- Добавляем столбец для отображения IP-адреса -->
+          <th>Промокод</th> 
+      </thead>
+      <tbody>
+        <% data.forEach(function(item, index) { %>
+          <tr>
+            <td><%= data.length - index %></td>
+            <td><%= item.uid %></td>
+            <td><%= item.method %></td>
+            <td><%= item.datetime %></td>
+            <td><%= item.page %></td>
+            <td><%= item.userIp %></td> <!-- Отображаем IP-адрес пользователя -->
+            <td><%= item.promo %></td> 
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+  <div class="page" id="secondPage">
+    <table>
+      <thead>
+        <tr>
+          <th>Отзыв</th>
+          <th>Оценка</th>
+          <th>Дата и время</th>
+          <th>Подтверждение</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% reviews.forEach(function(item, index) { %>
+          <tr>
+            <td><%= item.text %></td>
+            <td><%= item.method === 'card1' ? 'Положительно' : 'Отрицательно' %></td>
+            <td><%= item.date %></td>
+            <td>
+              <div>
+                <% if (item.isPublished) { %>
+                <span>Отзыв опубликован</span>
+                <% } else if (item.isRejected) { %>
+                <span>Отзыв отклонен</span>
+                <% } else { %>
+                  <form action="/reviews/publish" method="POST">
+                    <input type="hidden" name="reviewIndex" value="<%= index %>"> <!-- Передаем индекс отзыва -->
+                    <input type="hidden" name="review1" value="<%= item.text %>">
+                    <input type="hidden" name="date1" value="<%= item.date %>">
+                    <input type="hidden" name="rating1" value="<%= item.method %>">
+                    <button type="submit">Опубликовать</button>
+                  </form>
+                <form action="/reviews/reject" method="POST">
+                  <input type="hidden" name="reviewIndex" value="<%= index %>">
+                  <button type="submit">Отклонить</button>
+                </form>
+                <% } %>
+              </div>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <% if (parseInt(currentPage) > 1) { %>
+      <a href="/user/private/admin?page=<%= parseInt(currentPage) - 1 %>">Предыдущая</a>
+      <% } %>
+      <% if (parseInt(currentPage) < totalPages) { %>
+      <a href="/user/private/admin?page=<%= parseInt(currentPage) + 1 %>">Следующая</a>
+      <% } %>
+    </div>
+  </div>
+  
+
+  <script src="/admin.js"></script>
+</body>
+</html>

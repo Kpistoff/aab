@@ -1,0 +1,409 @@
+body{
+  background-color: rgba(204, 204, 204, 0.336);
+}
+.wrapp .content-block{
+  margin: 0 auto;
+  max-width: 968px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.wrapp .header-padd{
+  padding: 24px 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapp .header-padd .left-top{
+  display: inline-flex;
+  align-items: center;
+  column-gap: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.wrapp .header-padd .left-top a{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -.09px;
+  color: #17212ba3;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapp .header-padd .left-bottom{
+  display: flex;
+}
+.wrapp .header-padd .left-bottom span{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -.89px;
+  color: #17212b;
+}
+.wrapp .header-padd .right .details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.2px solid transparent;
+  border-radius: 10px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.29;
+  color: #17212b;
+  cursor: pointer;
+  padding: 12px 20px;
+  background: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.wrapp .block-body{
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.wrapp .block-body .inial-content{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  z-index: 10;
+  max-width: 872px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapp .block-body .inial-content .transaction-form .top{
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+.wrapp .block-body .inial-content .transaction-form .top span{
+  font-family: Inter,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: -.18px;
+  color: #17212b;
+}
+.wrapp .block-body .inial-content .transaction-form .top .for_img{
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+}
+.wrapp .block-body .inial-content .transaction-form .top .for_img img{
+  width: 100%;
+}
+.wrapp .inial-content .transaction-form .bottom-info .wallt_trc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.wrapp .inial-content .transaction-form .bottom-info .wallt_trc .title{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #17212b5c;
+  margin-bottom: 6px;
+  margin-top: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapp .inial-content .transaction-form .bottom-info .wallt_trc .adress{
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: -.22px;
+  color: #17212b;
+  word-break: break-all;
+  max-width: 300px;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapp .inial-content .transaction-form .bottom-info .wallt_trc button{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.wrapp .inial-content .transaction-form .bottom-info .wallt_trc button img{
+  width: 28px;
+  height: 28px;
+}
+.wrapp .inial-content .transaction-form .bottom-info .sum-topay{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.wrapp .inial-content .transaction-form .bottom-info .sum-topay .title{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #17212b5c;
+  margin-bottom: 6px;
+  margin-top: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapp .inial-content .transaction-form .bottom-info .sum-topay .adress{
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: -.22px;
+  color: #17212b;
+  word-break: break-all;
+  max-width: 300px;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapp .inial-content .transaction-form .bottom-info .sum-topay button{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.wrapp .inial-content .transaction-form .bottom-info .sum-topay button img{
+  width: 28px;
+  height: 28px;
+}
+.wrapp .inial-content .transaction-form button{
+  width: 100%;
+  background: #ffef73;
+  color: #17212b;
+  padding: 19px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.2px solid transparent;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.29;
+  cursor: pointer;
+}
+.wrapp .inial-content .transaction-form{
+  min-width: 500px;
+}
+.wrapp .inial-content .transaction-form .conf-pay{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.wrapp .inial-content .to-copy{
+  margin-left: 20px;
+}
+.wrapp .inial-content .descr span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  min-width: 500px;
+}
+/* Стили для затемненного фона */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.modal h2{
+  margin-bottom: 16px;
+  font-family: Inter,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: -.18px;
+  color: #17212b;
+}
+.modal .inial_modal{
+  max-width: 330px;
+  margin: auto;
+}
+.modal .inial_modal .modal_checkbox{
+  display: flex;
+  margin-bottom: 16px;
+}
+.modal .inial_modal .modal_checkbox input{
+  margin: 0px;
+}
+.modal .inial_modal .modal_checkbox p{
+  margin: 0px;
+}
+.modal .inial_modal .modal_butts{
+  display: flex;
+  justify-content: space-between;
+}
+.modal .inial_modal .modal_butts button{
+  padding: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.modal .inial_modal .modal_butts .cancel_p{
+  background: #ffef73;
+  color: #17212b;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.29;
+  cursor: pointer;
+}
+.modal .inial_modal .modal_butts .cancel_p:hover{
+  background: #ffe100;
+}
+.modal .inial_modal .modal_butts .go_p{
+  background: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.29;
+  cursor: pointer;
+}
+
+.modal-details{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  min-width: 500px;
+}
+.modal-details .inial_modal{
+  max-width: 450px;
+  margin: auto;
+}
+.modal-details .inial_modal .details-close{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-details .inial_modal .details-close h2{
+  margin: 0px;
+}
+.modal-details .inial_modal .details-close img{
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+}
+.modal-details .inial_modal .details-shop{
+  margin-top: 16px;
+}
+.modal-details .inial_modal .details-shop h3{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #7d8288;
+  margin: 0px;
+  margin-bottom: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal-details .inial_modal .details-shop span{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -.22px;
+  color: #0c131a;
+  word-break: break-all;
+  max-width: 300px;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal-details .inial_modal .details-desc{
+  margin-top: 16px;
+}
+.modal-details .inial_modal .details-desc h3{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #7d8288;
+  margin: 0px;
+  margin-bottom: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal-details .inial_modal .details-desc span{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -.22px;
+  color: #0c131a;
+  word-break: break-all;
+  max-width: 300px;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal-details .inial_modal .details-id{
+  margin-top: 16px;
+}
+.modal-details .inial_modal .details-id h3{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #7d8288;
+  margin: 0px;
+  margin-bottom: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal-details .inial_modal .details-id span{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -.22px;
+  color: #0c131a;
+  word-break: break-all;
+  max-width: 300px;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 480px){
+  .wrapp .content-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .block-body .inial-content{
+    padding: 0px !important;
+  }
+  .transaction-form{
+    min-width: 0px !important;
+  }
+  .modal-details{
+    min-width: 300px;
+  }
+}
